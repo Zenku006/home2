@@ -1,0 +1,26 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-color:yellowgreen;
+}
+.snow{
+    width: 20%;
+    float: right;
+}
+.form1{
+    width: 300px;
+    border: 2px red solid;
+    margin: 10px;
+}
+.form2{
+    width: 350px;
+    border: 2px blue dashed;
+    box-sizing: border-box;
+    margin: 10px;
+}
+.form3{
+    width: 350px;
+    border: 2px brown dotted;
+    box-sizing: border-box;
+    margin: 10px;
+}
