@@ -1,21 +1,21 @@
-//let a = 25;
-//let b = 35;
+//var a = 25;
+//var b = 35;
 //const c = a+b;
 //alert(c);
 //console.log(c);
-//let name= "Антон";
-//let text = "Привіт";
+//var name= "Антон";
+//var text = "Привіт";
 //console.log(text+name);
 //alert(text+name);
 
 // Домашня робота з 4.1
-// let myYear = 2006;
-// let lastYear = 2024;
-// let difference = lastYear - myYear;
+// var myYear = 2006;
+// var lastYear = 2024;
+// var difference = lastYear - myYear;
 // alert(difference);
 
-//let a = 15;
-//let b = 25;
+//var a = 15;
+//var b = 25;
 //console.log(a > b);
 // const userPassword = prompt('Введіть пароль:');
 // validPassword = '1234';
@@ -25,7 +25,7 @@
 //     alert('Невірний пароль');
 // }
 
-// let profession = prompt("Вкажи свою професію");
+// var profession = prompt("Вкажи свою професію");
 
 // if (profession == 'Лікар') {
 // alert('Дякуємо, що лікуєте.');
@@ -39,9 +39,9 @@
 // alert('Я знаю багато професій');
 // }
 
-// let a = 10;
-// let b = 15;
-// let c = 25;
+// var a = 10;
+// var b = 15;
+// var c = 25;
 
 // if(a<b || a<c){
 //     console.log("Число a менше за b або c");
@@ -49,7 +49,7 @@
 //     console.log("Умова не виконується");
 // }
 // console.log(10!=15);
-// let f = 35;
+// var f = 35;
 // if(a<b && a<f){
 //     console.log("Число a менше за b або f")
 // }else{
@@ -58,21 +58,54 @@
 
 
 //Домашня робота з 4.2
-let season = prompt("Вкажи номер сезону");
+// var season = prompt("Вкажи номер сезону");
 
-if(season == 1){
-    alert('Це весна');
-    console.log('Це весна');
-} else if (season == 2){
-    alert('Це літо');
-    console.log('Це літо');
-} else if (season == 3){
-    alert('Це осінь');
-    console.log('Це осінь');
-} else if (season == 4){
-    alert('Це зима');
-    console.log('Це зима');
-} else {
-    alert('Такого сезону не існує');
-    console.log('Такого сезону не існує');
+// if(season == 1){
+//     alert('Це весна');
+//     console.log('Це весна');
+// } else if (season == 2){
+//     alert('Це літо');
+//     console.log('Це літо');
+// } else if (season == 3){
+//     alert('Це осінь');
+//     console.log('Це осінь');
+// } else if (season == 4){
+//     alert('Це зима');
+//     console.log('Це зима');
+// } else {
+//     alert('Такого сезону не існує');
+//     console.log('Такого сезону не існує');
+// }
+
+//4.3
+
+// var i = 0;
+// while (i <= 3) {
+//     console.log(i);
+//     i++;
+// }
+// var a = 0;
+// do {
+//     console.log(a);
+//     a++;
+// } while (a>7);
+
+// var number;
+// do{
+//     number == prompt('Введіть цифру 5');
+// }while(number != 5);
+// for(var b = 1; b<=10; b+=1){
+//     console.log(b**2);
+// }
+
+// document.writeln('Рахуємо до 20:');
+// for(var text=0; text<=20; text++){
+//     document.writeln(text);
+// }
+
+// Домашня робота за 4.3
+
+document.writeln('Парні числа від 0 до 10:');
+for(var coupleNumber=0; coupleNumber<=10; coupleNumber+=2){
+    document.writeln(coupleNumber);
 }
