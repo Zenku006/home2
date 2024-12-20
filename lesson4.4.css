@@ -1,0 +1,29 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#slider{
+    height: 300px;
+    width: 600px;
+    background-image: url(./img/slider.jpg);
+    transition: all 1s;
+}
+button{
+    margin:  130px 20px;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+button:nth-child(2){
+    float: right;
+}

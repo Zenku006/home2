@@ -105,7 +105,56 @@
 
 // Домашня робота за 4.3
 
-document.writeln('Парні числа від 0 до 10:');
-for(var coupleNumber=0; coupleNumber<=10; coupleNumber+=2){
-    document.writeln(coupleNumber);
+// document.writeln('Парні числа від 0 до 10:');
+// for(var coupleNumber=0; coupleNumber<=10; coupleNumber+=2){
+//     document.writeln(coupleNumber);
+// }
+
+// Урок 4.4
+
+// var position = 0;
+// function nextSlide(){
+//     position -=600;
+//     console.log(position);
+//     slide();
+// }
+// function prewSlide(){
+//     position +=600;
+//     console.log(position);
+//     slide();
+// }
+// function slide() {
+//     var slider = document.getElementById('slider');
+//     var property = position + 'px';
+//     slider.style.backgroundPositionX = property;
+// }
+
+// Урок 4.5
+
+// function showMessage(){
+//     alert('Ви натиснули на трикутник');
+// }
+
+// Урок 4.6
+
+var button = document.getElementById('button');
+var scoreText = document.getElementById('scoreText');
+var score = 0;
+
+function flip(){
+    score++;
+    scoreText.textContent = score;
 }
+
+function newPosition() {
+    var x = Math.floor(Math.random()*90);
+    var y = Math.floor(Math.random()*90);
+    button.style.left = x + '%';
+    button.style.top = y + '%';   
+}
+function endGame() {
+    alert('За 10 секунд ви натиснули ' + score + ' разів');
+    score = 0;
+}
+setInterval(newPosition, 1500);
+setInterval(endGame, 15000);
